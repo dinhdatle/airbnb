@@ -1,5 +1,5 @@
 import { ClientOnly } from './components/ClientOnly'
-import { Modal } from './components/Modals/Modal'
+// import { Modal } from './components/Modals/Modal'
 import { RegisterModal } from './components/Modals/RegisterModal'
 import { Navbar } from './components/navbar/Navbar'
 import './globals.css'
