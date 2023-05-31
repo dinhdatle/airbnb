@@ -55,12 +55,15 @@ export const Modal : React.FC<ModalProps> = ({
   },[disabled,onSubmit])
 
   const hanldeSecondaryAction = useCallback(()=>{
+    
     if(disabled || !secondaryAction){
       return;
     }
     secondaryAction()
 
   },[disabled,secondaryAction])
+
+ 
 
   if(!isOpen){
     return null
@@ -84,6 +87,7 @@ export const Modal : React.FC<ModalProps> = ({
               <div className="flex flex-row items-center gap-4 w-full   ">
                 {secondaryAction && secondaryActionLabel && (<Button outline label={secondaryActionLabel} disabled={disabled} onClick={hanldeSecondaryAction}/>)}
                 <Button label={actionLabel} disabled={disabled} onClick={handleSubmit}/>
+                
               </div>
               {footer}
             </div>
