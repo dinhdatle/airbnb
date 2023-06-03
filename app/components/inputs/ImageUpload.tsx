@@ -16,7 +16,7 @@ interface ImageUploadProps {
 }
 
 const ImageUpload: React.FC<ImageUploadProps> = ({ onChange,value}) => {
-  const handleUpload = useCallback((result: any) => {onChange(result.info.secure_url)}, []);
+  const handleUpload = useCallback((result: any) => {onChange(result.info.secure_url)}, [onChange]);
 
   return (
     <CldUploadWidget onUpload={handleUpload} uploadPreset="ecx3avev" options={{maxFiles: 1}}>
