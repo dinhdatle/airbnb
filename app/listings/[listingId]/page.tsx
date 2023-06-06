@@ -1,3 +1,5 @@
+'use client'
+
 import getCurrentUser from "@/app/actions/getCurrentUser"
 import getListingById from "@/app/actions/getListingById"
 import { ClientOnly } from "@/app/components/ClientOnly"
@@ -21,7 +23,7 @@ interface IParams {
     }
   return (
     <ClientOnly>
-        <ListingClient listing={listing} currentUser={currentUser} />
+        <ListingClient  currentUser={currentUser} listing={listing} />
     </ClientOnly>
   )
 }

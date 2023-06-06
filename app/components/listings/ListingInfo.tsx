@@ -6,9 +6,11 @@ import { IconType } from "react-icons";
 import { Avatar } from "../Avatar";
 import Map from "../Map";
 import ListingCategory from "./ListingCategory";
+import { SafeUser } from "@/app/types";
 
 interface ListingInfoProps {
-    user: User,
+   user: SafeUser,
+    // user: User,
     description: string;
     guestCount: number;
     roomCount: number;
