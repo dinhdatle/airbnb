@@ -9,8 +9,8 @@ import ListingCategory from "./ListingCategory";
 import { SafeUser } from "@/app/types";
 
 interface ListingInfoProps {
-   user: SafeUser,
-    // user: User,
+  //  user: SafeUser,
+    user: User,
     description: string;
     guestCount: number;
     roomCount: number;
